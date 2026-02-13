@@ -15,20 +15,20 @@
 
 
     <header class="header">
-        <a href="#home" class="logo">Luiza
-            <span>Buriti</span></a>
+    <a href="#home" class="logo">Luiza <span>Buriti</span></a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+    <!-- Ícone hamburger -->
+    <div id="menu-icon">&#9776;</div>
 
-        <nav class="navbar">
-            <a href="#home" >Início</a>
-            <a href="#sobremim">Sobre Mim</a>
-            <a href="#skills">Minhas Skills</a>
-            <!-- <a href="#projects">Projetos</a> -->
-            <a href="#contact">Contato</a>
-        </nav>
-
+    <nav class="navbar">
+        <a href="#home">Início</a>
+        <a href="#sobremim">Sobre Mim</a>
+        <a href="#skills">Minhas Skills</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </nav>
     </header>
+
 
     <section class="home" id="home">
         <div class="home-content">
@@ -169,10 +169,37 @@
 
             </div>
         </div>
+    </section> 
+    <section id="projects" class="projects">
+  <h2 class="heading">Projetos <span>Principais</span></h2>
+  <div class="cards-container">
 
+    <a href="https://link-do-projeto2.com" target="_blank" class="card">
+      <img src="fotos/fotoconsul.png" alt="Projeto 2">
+      <div class="card-info">
+        <h3>Consultório Odontológico</h3>
+        <p>Site profissional com agendamento online, apresentação dos serviços e contato.</p>
+      </div>
+    </a>
 
+  
+       <a href="https://link-do-projeto1.com" target="_blank" class="card">
+      <img src="fotos/fotoles.png" alt="Projeto 1">
+      <div class="card-info">
+        <h3>LBuriti Elegance</h3>
+        <p>Loja virtual elegante de roupas e acessórios.</p>
+      </div>
+    </a>
+     <a href="https://link-do-projeto3.com" target="_blank" class="card">
+      <img src="fotos/fotoporti.png" alt="Projeto 3">
+      <div class="card-info">
+        <h3>Porfólio pessoal</h3>
+        <p>Breve apresentação sobre mim e minhas habilidades</p>
+      </div>
+    </a>
+  </div>
+</section>
 
-    </section>
 <section class="contact" id="contact">
 
   <h2 class="contact-title">Contate-<span>me</span></h2>
@@ -254,6 +281,10 @@
             </li>
 
             <li>
+                <a href="#projects">Projetos</a>
+            </li>
+
+            <li>
                 <a href="https://wa.me/5511998166044">Contato</a>
             </li>
         </ul>
@@ -293,6 +324,13 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
+// Menu hamburger funcional
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
 
 
 
