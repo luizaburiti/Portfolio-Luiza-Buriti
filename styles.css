@@ -862,7 +862,7 @@ section.active{
     }
 
     .logo{
-        margin-left: 9rem;
+        margin-left: 6rem;
     }
 }
 
@@ -922,16 +922,23 @@ section.active{
 
 @media (max-width: 600px){
   .text-animation{
-    line-height: 1.2;
-    min-height: 4rem; /* trava a altura */
+    font-size: 2.4rem;
+    line-height: 1.3;
+    min-height: 3.5rem;
   }
 
   .text-animation span{
     display: inline-block;
-    min-height: 4rem;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .text-animation span::after{
     height: 100%;
   }
+
+  .home-content p{
+    margin-top: 1.5rem;
+  }
 }
+
