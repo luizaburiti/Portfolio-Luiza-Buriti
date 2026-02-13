@@ -864,6 +864,7 @@ section.active{
 
     .logo{
         margin-left: 5rem;
+
     }
 }
 
@@ -1809,8 +1810,12 @@ section.active{
 
     .logo{
 
+<<<<<<< HEAD
        
         margin-left: 5rem;
+=======
+        margin-left: 6rem;
+>>>>>>> 2e1302f5f143e3b5e8f3a75df09b46133473a1e1
 
     }
 }
