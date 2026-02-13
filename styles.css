@@ -66,7 +66,7 @@ body{
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
-    margin-left: 9rem;
+    margin-left: 12rem;
 }
 
 .logo:hover{
@@ -447,8 +447,9 @@ span{
 
 .contact-title{
   text-align: center;
-  font-size: 6rem;
+  font-size: 8rem;
   margin-bottom: 4rem;
+  margin-top: 120px;
 }
 
 .contact-container{
@@ -459,6 +460,7 @@ span{
   padding: 4rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 25px rgba(146, 0, 237, 0.2);
+  margin-top: 70px;
 }
 
 
@@ -678,6 +680,7 @@ section.active{
 
 .skills{
     background: var(--bg-color);
+    margin-top: 138px;
 }
 
 .skills .container{
@@ -863,7 +866,7 @@ section.active{
     }
 
     .logo{
-        margin-left: 4rem;
+        margin-left: 7rem;
 
     }
 }
