@@ -38,7 +38,7 @@
 
             <h3 class="text-animation">Eu Sou <span></span></h3>
             <p>
-                 Apaixonada por tecnologia, direciono meus estudos para Programação e Desenvolvimento Web, focando em soluções digitais e aprendizagem contínua. Tenho conhecimentos em HTML, CSS, JavaScript, Python e MySQL, com base em lógica de programação, desenvolvimento web e organização de dados. Estou aprimorando minhas habilidades através de projetos práticos, evoluindo em front-end e back-end.
+                 Apaixonada por tecnologia, direciono meus estudos para Programação e Desenvolvimento Web, focando em soluções digitais e aprendizagem contínua. Tenho conhecimentos em HTML, CSS, JavaScript, Python, C# e MySQL, com base em lógica de programação, desenvolvimento web e organização de dados. Estou aprimorando minhas habilidades através de projetos práticos, evoluindo em front-end e back-end.
             </p>
 
             <div class="social-icons">
@@ -328,12 +328,17 @@ revealOnScroll();
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 
-menuIcon.addEventListener('click', () => {
+menuIcon.addEventListener('click', (e) => {
+    e.stopPropagation(); // impede que o clique "suba" pro document
     navbar.classList.toggle('active');
 });
 
-
-
+document.addEventListener('click', (e) => {
+    // se clicar fora do menu e fora do botão
+    if (!navbar.contains(e.target) && !menuIcon.contains(e.target)) {
+        navbar.classList.remove('active');
+    }
+});
 
     </script>
 </body>
